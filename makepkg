@@ -2114,7 +2114,7 @@ CARCH=${_CARCH:-$CARCH}
 
 if (( ! INFAKEROOT )); then
 	if (( EUID == 0 )); then
-		plain "allowing makepkg as root"
+		plain "running as root"
 	fi
 else
 	if [[ -z $FAKEROOTKEY ]]; then
